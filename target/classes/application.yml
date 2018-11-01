@@ -1,0 +1,13 @@
+
+spring:
+  server:
+      port:8080<span>	</span>
+  datasource:
+     driver-class-name: com.mysql.jdbc.Driver
+     url: jdbc:mysql://127.0.0.1:3306/db_question
+     username: root
+     password: root
+  jpa:
+    hibernate:
+      ddl-auto: update  # create每次运行都删除原有表创建新表,update不用每次创建新表
+    show-sql: true # 打印SQL语句
