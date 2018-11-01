@@ -38,7 +38,7 @@ public class CheckBoxService {
     }
 
     //return false if there is no checkbox in table with the given id
-    public boolean updateTrivia(CheckBox checkbox) {
+    public boolean updateCheckBox(CheckBox checkbox) {
         int cid = checkbox.getCid();
         if (checkBoxRepository.findOne(cid) != null) {
             checkBoxRepository.save(checkbox);
@@ -48,7 +48,7 @@ public class CheckBoxService {
     }
 
     //return false if there is no checkbox with the given id in the table
-    public boolean deleteTrivia(CheckBox checkbox) {
+    public boolean deleteCheckBox(CheckBox checkbox) {
         int cid = checkbox.getCid();
         if (checkBoxRepository.findOne(cid) != null) {
             checkBoxRepository.delete(cid);

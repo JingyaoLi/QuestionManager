@@ -38,7 +38,7 @@ public class PollService {
     }
 
     //return false if there is no poll in table with the given id
-    public boolean updateTrivia(Poll poll) {
+    public boolean updatePoll(Poll poll) {
         int pid = poll.getPid();
         if (pollRepository.findOne(pid) != null) {
             pollRepository.save(poll);
@@ -48,7 +48,7 @@ public class PollService {
     }
 
     //return false if there is no poll with the given id in the table
-    public boolean deleteTrivia(Poll poll) {
+    public boolean deletePoll(Poll poll) {
         int pid = poll.getPid();
         if (pollRepository.findOne(pid) != null) {
             pollRepository.delete(pid);
