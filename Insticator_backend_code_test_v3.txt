@@ -1,0 +1,55 @@
+At Insticator, we provide an embed to the publisher website and the embed shows trivia, polling questions and other kinds of enaging content. Here is an example, cheeseheadtv.com is a football site, so all the questions would be relevant to football, football player, etc. http://dashboard.insticator.com/embeds/openTestPage?siteUUID=fae51aa5-2e85-48df-a21c-e2b053c29172&embedUUID=570e6637-2a3a-4670-a70a-6cee956ca64b&codeVersion=VERSION_3_0
+
+A trivia is a question have two to four options with one of them is the correct answer. 
+e.g. Which team won the 2017 super bowl?
+- Falcons
+- Patriots
+
+A poll is an objective question have two to four options without a correct answer.  
+e.g. What's your favorite car brand?
+- Nissan
+- Honda
+- Audi
+- BMW
+
+Assume we have two new question types, checkbox question, and matrix question. 
+
+A checkbox question is an objective question with up to ten options and people can choose anything between one and ten options. There is no correct and wrong.
+e.g. What are the colors do you like?
+- Red
+- Blue
+- Yellow
+- Green
+- Black
+- Purple
+
+A matric question is an objective question that shows options in a matrix. A visitor can only pick one of the available options, there is no correct and wrong.
+e.g. Please tell us a bit about yourself
+Age/Gender/income  Male  Female
+     <18    __      __
+18 to 35    __      __
+35 to 55    __      __
+    > 55    __      __
+
+1. Please create the data structures to store these different kinds of questions that can be served to the widget.  
+2. Assume each visitor has an UUID. To make them more engaging, we don't want to show the same question again after they answer it, please create an API for this web service call. Please elaborate how to make this request scalable when there are millions of questions and millision of visitors.
+
+Looking for certain tasks done in each back-end technology.
+
+Java:
+- Utilize a Java backend MVC framework, e.g. Spring, Play.
+- Create web service call to do CRUD process for the questions.
+- Add other fields you think should exist.
+
+Database:
+- Use any relational database. e.g. MySQL, MS SQL Server.
+- Implement JPA/Hibernate/iBATIS so that CRUD can be done on questions.
+
+Version Control:
+- Use Git to manage your code, upload your code to GitHub and submit the link to your repository.
+
+Other Technic:
+- Utilize any other library/tool/design pattern that you are familiar with to make your life easier.
+
+
+
