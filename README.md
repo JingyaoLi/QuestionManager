@@ -22,3 +22,5 @@ View layer contains the object which will be sent to frontend.
 In some cases, we should not send the whole information of the object in the data layer to the frontend, for example, the answer of the trivia.
 
 Transfer layer is used to transfer the object between the object in Data layer and the object in View layer.
+
+Controller layer is used to distribute the request from frontend to different services.
