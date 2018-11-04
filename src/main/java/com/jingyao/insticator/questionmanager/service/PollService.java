@@ -3,9 +3,11 @@ package com.jingyao.insticator.questionmanager.service;
 import com.jingyao.insticator.questionmanager.dao.PollRepository;
 import com.jingyao.insticator.questionmanager.data.Poll;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public class PollService {
 
     @Autowired

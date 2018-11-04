@@ -3,9 +3,10 @@ package com.jingyao.insticator.questionmanager.service;
 import com.jingyao.insticator.questionmanager.dao.CheckBoxRepository;
 import com.jingyao.insticator.questionmanager.data.CheckBox;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
-
+@Service
 public class CheckBoxService {
 
     @Autowired
