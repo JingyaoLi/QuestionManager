@@ -8,4 +8,6 @@ import java.util.List;
 public interface UserMatricRepository extends JpaRepository<UserMatric, Integer> {
 
     public UserMatric findByUuidAndMid(int uuid, int mid);
+
+    public List<UserMatric> findByUuid(int uuid);
 }

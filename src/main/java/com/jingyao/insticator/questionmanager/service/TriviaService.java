@@ -2,13 +2,20 @@ package com.jingyao.insticator.questionmanager.service;
 
 import com.jingyao.insticator.questionmanager.dao.TriviaRepository;
 import com.jingyao.insticator.questionmanager.dao.UserCheckboxRepository;
+import com.jingyao.insticator.questionmanager.dao.UserTriviaRepository;
 import com.jingyao.insticator.questionmanager.data.Trivia;
+import com.jingyao.insticator.questionmanager.data.UserTrivia;
+import com.jingyao.insticator.questionmanager.transfer.TriviaTransfer;
+import com.jingyao.insticator.questionmanager.view.TriviaView;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
+
 @Service
 public class TriviaService {
 
@@ -63,5 +70,17 @@ public class TriviaService {
             return true;
         }
         return false;
+    }
+
+    @Autowired
+    private UserTriviaRepository userTriviaRepository;
+
+    public TriviaView getTriviaView(int uuid) {
+        Set<Integer> answered = new HashSet<Integer>();
+        for (UserTrivia ut : userTriviaRepository.findByUuid(uuid)) {
+            answered.add(ut.getTid());
+        }
+        Trivia trivia = triviaRepository.findFirstByTidNotIn(answered);
+        return TriviaTransfer.transfer(trivia);
     }
 }

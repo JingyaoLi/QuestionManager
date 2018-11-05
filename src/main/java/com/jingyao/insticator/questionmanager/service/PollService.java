@@ -1,11 +1,15 @@
 package com.jingyao.insticator.questionmanager.service;
 
 import com.jingyao.insticator.questionmanager.dao.PollRepository;
+import com.jingyao.insticator.questionmanager.dao.UserPollRepository;
 import com.jingyao.insticator.questionmanager.data.Poll;
+import com.jingyao.insticator.questionmanager.data.UserPoll;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 @Service
 public class PollService {
@@ -57,6 +61,18 @@ public class PollService {
             return true;
         }
         return false;
+    }
+
+    @Autowired
+    private UserPollRepository userPollRepository;
+
+    public Poll getPoll(int uuid) {
+        Set<Integer> answered = new HashSet<Integer>();
+        for (UserPoll up : userPollRepository.findByUuid(uuid)) {
+            answered.add(up.getPid());
+        }
+        Poll poll = pollRepository.findFirstByPidNotIn(answered);
+        return poll;
     }
 
 }

@@ -8,4 +8,6 @@ import java.util.List;
 public interface UserTriviaRepository extends JpaRepository<UserTrivia, Integer> {
 
     public UserTrivia findByUuidAndTid(int uuid, int tid);
+
+    public List<UserTrivia> findByUuid(int uuid);
 }

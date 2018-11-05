@@ -8,4 +8,6 @@ import java.util.List;
 
 public interface UserCheckboxRepository extends JpaRepository<UserCheckbox, Integer> {
     public UserCheckbox findByUuidAndCid(int uuid, int cid);
+
+    public List<UserCheckbox> findByUuid(int uuid);
 }

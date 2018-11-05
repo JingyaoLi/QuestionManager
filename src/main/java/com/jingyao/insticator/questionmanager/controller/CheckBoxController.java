@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+//This controller is used for questioner to do CRUD process for CheckBox
 @RestController
 @RequestMapping("checkbox")
 public class CheckBoxController {
@@ -26,11 +27,11 @@ public class CheckBoxController {
     }
 
     @GetMapping("findByQuestion/{cquestion}")
-    public List<CheckBox> getTCheckBoxByQuestion(@PathVariable("cquestion") String cquestion) {
+    public List<CheckBox> getCheckBoxByQuestion(@PathVariable("cquestion") String cquestion) {
         return checkBoxService.getCheckBoxByQuestion(cquestion);
     }
 
-    @GetMapping("findByAnswer/{cchoices}")
+    @GetMapping("findByChoices/{cchoices}")
     public List<CheckBox> getCheckBoxByChoices(@PathVariable("cchoices") String cchoices) {
         return checkBoxService.getCheckBoxByChoices(cchoices);
     }

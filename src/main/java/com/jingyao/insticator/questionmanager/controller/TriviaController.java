@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+//This controller is used for questioner to do CRUD process for Trivia
 @RestController
 @RequestMapping("trivia")
 public class TriviaController {
@@ -34,7 +35,7 @@ public class TriviaController {
         return triviaService.getTriviaByAnswer(tanswer);
     }
 
-    @GetMapping("findByAnswer/{tchoices}")
+    @GetMapping("findByChoices/{tchoices}")
     public List<Trivia> getTriviaByChoices(@PathVariable("tchoices") String tchoices) {
         return triviaService.getTriviaByChoices(tchoices);
     }

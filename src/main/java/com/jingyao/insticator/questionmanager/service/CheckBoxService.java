@@ -1,11 +1,16 @@
 package com.jingyao.insticator.questionmanager.service;
 
 import com.jingyao.insticator.questionmanager.dao.CheckBoxRepository;
+import com.jingyao.insticator.questionmanager.dao.UserCheckboxRepository;
 import com.jingyao.insticator.questionmanager.data.CheckBox;
+import com.jingyao.insticator.questionmanager.data.UserCheckbox;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
+
 @Service
 public class CheckBoxService {
 
@@ -56,5 +61,17 @@ public class CheckBoxService {
             return true;
         }
         return false;
+    }
+
+    @Autowired
+    private UserCheckboxRepository userCheckboxRepository;
+
+    public CheckBox getCheckBox(int uuid) {
+        Set<Integer> answered = new HashSet<Integer>();
+        for (UserCheckbox uc : userCheckboxRepository.findByUuid(uuid)) {
+            answered.add(uc.getCid());
+        }
+        CheckBox checkBox = checkBoxRepository.findFirstByCidNotIn(answered);
+        return checkBox;
     }
 }

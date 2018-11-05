@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+//This controller is used for questioner to do CRUD process for Poll
 @RestController
 @RequestMapping("poll")
 public class PollController {
@@ -29,7 +30,7 @@ public class PollController {
         return pollService.getPollByQuestion(pquestion);
     }
 
-    @GetMapping("findByAnswer/{pchoices}")
+    @GetMapping("findByChoices/{pchoices}")
     public List<Poll> getPollByChoices(@PathVariable("pchoices") String pchoices) {
         return pollService.getPollByChoices(pchoices);
     }
