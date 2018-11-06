@@ -2,7 +2,6 @@ package com.jingyao.insticator.questionmanager.controller;
 
 import com.jingyao.insticator.questionmanager.data.CheckBox;
 import com.jingyao.insticator.questionmanager.service.CheckBoxService;
-import com.sun.jnlp.CheckServicePermission;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

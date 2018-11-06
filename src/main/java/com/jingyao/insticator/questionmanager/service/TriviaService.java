@@ -44,6 +44,10 @@ public class TriviaService {
 
     //return false if there is a trivia with the same id in table
     public boolean addTrivia(Trivia trivia) {
+        String tchoices = trivia.getTchoices();
+        if (tchoices.split(",").length < 2 || tchoices.split(",").length > 4){
+            return false;
+        }
         int tid = trivia.getTid();
         if (triviaRepository.findOne(tid) == null) {
             triviaRepository.save(trivia);
@@ -54,6 +58,10 @@ public class TriviaService {
 
     //return false if there is no trivia in table with the given id
     public boolean updateTrivia(Trivia trivia) {
+        String tchoices = trivia.getTchoices();
+        if (tchoices.split(",").length < 2 || tchoices.split(",").length > 4){
+            return false;
+        }
         int tid = trivia.getTid();
         if (triviaRepository.findOne(tid) != null) {
             triviaRepository.save(trivia);

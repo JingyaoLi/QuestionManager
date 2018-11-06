@@ -35,6 +35,10 @@ public class PollService {
 
     //return false if there is a poll with the same id in table
     public boolean addPoll(Poll poll) {
+        String pchoices = poll.getPchoices();
+        if (pchoices.split(",").length < 2 || pchoices.split(",").length > 4){
+            return false;
+        }
         int pid = poll.getPid();
         if (pollRepository.findOne(pid) == null) {
             pollRepository.save(poll);
@@ -45,6 +49,10 @@ public class PollService {
 
     //return false if there is no poll in table with the given id
     public boolean updatePoll(Poll poll) {
+        String pchoices = poll.getPchoices();
+        if (pchoices.split(",").length < 2 || pchoices.split(",").length > 4){
+            return false;
+        }
         int pid = poll.getPid();
         if (pollRepository.findOne(pid) != null) {
             pollRepository.save(poll);

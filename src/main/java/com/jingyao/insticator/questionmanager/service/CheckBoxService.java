@@ -35,6 +35,10 @@ public class CheckBoxService {
 
     //return false if there is a checkbox with the same id in table
     public boolean addCheckBox(CheckBox checkbox) {
+        String cchoices = checkbox.getCchoices();
+        if (cchoices.length() == 0 || cchoices.split(",").length > 10){
+            return false;
+        }
         int cid = checkbox.getCid();
         if (checkBoxRepository.findOne(cid) == null) {
             checkBoxRepository.save(checkbox);
@@ -45,6 +49,10 @@ public class CheckBoxService {
 
     //return false if there is no checkbox in table with the given id
     public boolean updateCheckBox(CheckBox checkbox) {
+        String cchoices = checkbox.getCchoices();
+        if (cchoices.length() == 0 || cchoices.split(",").length > 10){
+            return false;
+        }
         int cid = checkbox.getCid();
         if (checkBoxRepository.findOne(cid) != null) {
             checkBoxRepository.save(checkbox);
