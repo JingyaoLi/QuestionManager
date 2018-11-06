@@ -1,29 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6f058828-63d0-4411-a678-8b0675189fd2" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jingyao/insticator/questionmanager/controller/CheckBoxController.java" afterPath="$PROJECT_DIR$/src/main/java/com/jingyao/insticator/questionmanager/controller/CheckBoxController.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jingyao/insticator/questionmanager/dao/UserPollRepository.java" afterPath="$PROJECT_DIR$/src/main/java/com/jingyao/insticator/questionmanager/dao/UserPollRepository.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jingyao/insticator/questionmanager/service/CheckBoxService.java" afterPath="$PROJECT_DIR$/src/main/java/com/jingyao/insticator/questionmanager/service/CheckBoxService.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jingyao/insticator/questionmanager/service/PollService.java" afterPath="$PROJECT_DIR$/src/main/java/com/jingyao/insticator/questionmanager/service/PollService.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jingyao/insticator/questionmanager/service/TriviaService.java" afterPath="$PROJECT_DIR$/src/main/java/com/jingyao/insticator/questionmanager/service/TriviaService.java" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jingyao/insticator/questionmanager/controller/CheckBoxController.class" afterPath="$PROJECT_DIR$/target/classes/com/jingyao/insticator/questionmanager/controller/CheckBoxController.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jingyao/insticator/questionmanager/controller/UserController.class" afterPath="$PROJECT_DIR$/target/classes/com/jingyao/insticator/questionmanager/controller/UserController.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jingyao/insticator/questionmanager/dao/CheckBoxRepository.class" afterPath="$PROJECT_DIR$/target/classes/com/jingyao/insticator/questionmanager/dao/CheckBoxRepository.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jingyao/insticator/questionmanager/dao/MatricRepository.class" afterPath="$PROJECT_DIR$/target/classes/com/jingyao/insticator/questionmanager/dao/MatricRepository.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jingyao/insticator/questionmanager/dao/PollRepository.class" afterPath="$PROJECT_DIR$/target/classes/com/jingyao/insticator/questionmanager/dao/PollRepository.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jingyao/insticator/questionmanager/dao/TriviaRepository.class" afterPath="$PROJECT_DIR$/target/classes/com/jingyao/insticator/questionmanager/dao/TriviaRepository.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jingyao/insticator/questionmanager/dao/UserCheckboxRepository.class" afterPath="$PROJECT_DIR$/target/classes/com/jingyao/insticator/questionmanager/dao/UserCheckboxRepository.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jingyao/insticator/questionmanager/dao/UserMatricRepository.class" afterPath="$PROJECT_DIR$/target/classes/com/jingyao/insticator/questionmanager/dao/UserMatricRepository.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jingyao/insticator/questionmanager/dao/UserPollRepository.class" afterPath="$PROJECT_DIR$/target/classes/com/jingyao/insticator/questionmanager/dao/UserPollRepository.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jingyao/insticator/questionmanager/dao/UserTriviaRepository.class" afterPath="$PROJECT_DIR$/target/classes/com/jingyao/insticator/questionmanager/dao/UserTriviaRepository.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jingyao/insticator/questionmanager/service/CheckBoxService.class" afterPath="$PROJECT_DIR$/target/classes/com/jingyao/insticator/questionmanager/service/CheckBoxService.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jingyao/insticator/questionmanager/service/MatricService.class" afterPath="$PROJECT_DIR$/target/classes/com/jingyao/insticator/questionmanager/service/MatricService.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jingyao/insticator/questionmanager/service/PollService.class" afterPath="$PROJECT_DIR$/target/classes/com/jingyao/insticator/questionmanager/service/PollService.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jingyao/insticator/questionmanager/service/TriviaService.class" afterPath="$PROJECT_DIR$/target/classes/com/jingyao/insticator/questionmanager/service/TriviaService.class" />
-    </list>
+    <list default="true" id="6f058828-63d0-4411-a678-8b0675189fd2" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
