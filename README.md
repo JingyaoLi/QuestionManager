@@ -17,7 +17,12 @@ Service layer is used to do complex CRUD process for the table in database.
 
 Dao layer helps service layer to do basic CRUD process, implementing JPA.
 
+<<<<<<< HEAD
 View layer contains the object which will be sent to frontend. In some cases, we should not send the whole information of the object in the data layer to the frontend. For example£¬the answer of the trivia should not be sent to the frontend. So I create TriviaView in this layer.
+=======
+View layer contains the object which will be sent to frontend. 
+In some cases, we should not send the whole information of the object in the data layer to the frontend. For exampleï¼Œthe answer of the trivia should not be sent to the frontend. So I create TriviaView in this layer.
+>>>>>>> 17672035b2fcfd637f57094256a0c5baac76ebb3
 
 Transfer layer is used to transfer the object between the object in Data layer and the object in View layer.
 
